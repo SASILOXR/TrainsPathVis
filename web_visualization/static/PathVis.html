@@ -157,21 +157,13 @@
                       type: "scatter",
                       coordinateSystem: "bmap",
                       data: points,
-                      symbolSize: function (val) {
-                        return 15;
-                      },
+                      symbolSize: 15,
                       encode: {
                         value: 2,
                       },
-                      itemstyle: {
-                        color: "orange",
-                        opacity: "20%",
-                      },
-                      color: "orange",
-                      label: {
-                        formatter: "{b}",
-                        position: "right",
-                        show: false,
+                      itemStyle: {
+                        color: "green",
+                        opacity: 0.8,
                       },
                     },
                     {
@@ -247,15 +239,16 @@
                 encode: {
                   value: 2,
                 },
-                itemstyle: {
-                  color: "orange",
-                  opacity: "20%",
+                itemStyle: {
+                  color: "yellow",
+                  opacity: 0.5,
                 },
-                color: "orange",
                 label: {
+                  opacity: 1,
+                  color: "rgb(255,255,255)",
                   formatter: "{b}",
                   position: "right",
-                  show: false,
+                  show: true,
                 },
               },
             ],
